@@ -1,5 +1,0 @@
-Make a 20-second ad, 1920×1080, for Hẻm 12, an afternoon tea shop in Saigon: Thai milk tea and house-made peach tea, 25.000đ/ly, 12 Nguyễn Du, Q.1, open 7h–22h. Call to action: "Ghé 12 Nguyễn Du, Q.1 — chiều nay". On-screen text in Vietnamese.
-
-A 3D character presents the shop inside a real-lit 3D scene (HDRI, PBR materials, depth of field, contact shadows), mixed with motion-graphics type. Sound from the bank. The wamotion skill's character kit and scene material exist and may be used.
-
-Build it with Remotion in this folder and render it to out/hem12-3d.mp4. Go all out.

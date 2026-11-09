@@ -17,7 +17,7 @@ I spent two weeks running blind A/B tests of an agent making short videos with R
 
 **Body:**
 
-For the past two weeks I have been testing Claude Code making short Remotion videos: showreels, a 30-second ad for a tea shop, a 20-second ad with a 3D character. Every test was the same prompt and the same model, one run with some addition and one without, then I scored the two films blind on five items (design, AI slop, sound quality, sound-to-motion sync, overall).
+For the past two weeks I have been testing Claude Code making short Remotion videos: showreels, a 30-second ad with real must-haves, a 20-second ad with a 3D character. Every test was the same prompt and the same model, one run with some addition and one without, then I scored the two films blind on five items (design, AI slop, sound quality, sound-to-motion sync, overall).
 
 What did not help: a desktop app around the agent, templates, review checklists, rules about how the film should look. What did help was giving the agent things it could not make itself:
 
@@ -44,7 +44,7 @@ I ran blind A/B tests for two weeks on an agent making Remotion videos. Nothing 
 What is in it: 341 sound effects + 14 music tracks (CC0/MIT, offline) with measured attack time and BPM, a tempo meter, optional ears (earshot) that score the soundtrack, a CC0 3D character kit for @remotion/three, one fresh-eyes review round. No rules about how the film should look.
 
 **3/4**
-Numbers: 15 s showreel, skill vs bare agent, skill won design / slop / sound / sync / overall. 30 s tea-shop ad, skill with ears beat skill without ears and the bare agent on all five. One scorer (me), one film per arm, so a signal, not a benchmark. Vote logs are in the repo.
+Numbers: 15 s showreel, skill vs bare agent, skill won design / slop / sound / sync / overall. 30 s ad with real must-haves, skill with ears beat skill without ears and the bare agent on all five. One scorer (me), one film per arm, so a signal, not a benchmark. Vote logs are in the repo.
 
 **4/4**
 Install: curl -fsSL https://raw.githubusercontent.com/hi-thanhn/wamotion/main/install.sh | sh

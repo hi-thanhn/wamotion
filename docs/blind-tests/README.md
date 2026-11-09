@@ -46,7 +46,7 @@ The ears were not forced; the agent called them three times on its own: the firs
 visual events with no sound and suggested a step-down before the big hit; after the agent changed the mix the ears
 reported the whole film at −18.4 LUFS, so the agent wrote a mastering step with a limiter and got 23 of 23. Since
 the films were loudness-normalised before scoring, what the scorer could still hear was placement and sound
-quality, and K beat N on both. The film is [`examples/hem12-ad-30s.mp4`](../../examples/hem12-ad-30s.mp4).
+quality, and K beat N on both. The film itself is no longer in `examples/`.
 
 ## What the skill is, for these tests
 
