@@ -1,0 +1,17 @@
+# EARS_DOMAIN comes from .env (e.g. ears.example.com → an A/AAAA record to this machine). Caddy fetches the certificate.
+{$EARS_DOMAIN} {
+	request_body {
+		max_size 320MB
+	}
+	reverse_proxy ears:8000 {
+		transport http {
+			read_timeout 20m
+			write_timeout 20m
+		}
+	}
+	encode gzip
+	log {
+		output stdout
+		format json
+	}
+}

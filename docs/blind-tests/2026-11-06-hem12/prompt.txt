@@ -1,0 +1,11 @@
+Make a 30-second Facebook ad video for Hẻm 12, an afternoon tea shop in Saigon: Thai milk tea and house-made peach tea, wooden chairs, a window onto the alley, office workers dropping in during the afternoon.
+
+Audience: office workers 25–35 who work around District 1, sleepy in the afternoon, scrolling Facebook at 3 pm.
+Goal: this afternoon, walk over to Hẻm 12 for a cup instead of ordering on an app.
+Call to action: "Ghé 12 Nguyễn Du, Q.1 — chiều nay".
+
+Must have: the words "Hẻm 12" as a logo in the final scene; the price 25.000đ/ly shown clearly; the address 12 Nguyễn Du, Q.1 in the final scene.
+Avoid: the word "tuyệt vời"; pounding EDM; stock photos of foreigners.
+Facts you may use: open 7h–22h every day; 20% off the second cup before 10 am; the peach tea is house-made, brewed every morning.
+
+On-screen text in Vietnamese. Square 1080×1080. Use music/cup-of-tea.mp3 as the soundtrack. Build it with Remotion in this folder and render it to out/hem12.mp4. Go all out.

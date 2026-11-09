@@ -1,0 +1,42 @@
+# One machine: the ears API behind Caddy (automatic TLS). Copy `.env.example` to `.env` first.
+services:
+  ears:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    image: wamotion-ears:local
+    restart: always
+    env_file: .env
+    environment:
+      WAMOTION_EARS_DATA: /data
+      EARSHOT_HOME: /data/earshot
+    volumes:
+      - ears-data:/data
+    expose:
+      - "8000"
+    mem_limit: 12g
+    pids_limit: 512
+    read_only: true
+    tmpfs:
+      - /tmp:size=2g
+    security_opt:
+      - no-new-privileges:true
+
+  caddy:
+    image: caddy:2
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    env_file: .env
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+    depends_on:
+      - ears
+
+volumes:
+  ears-data:
+  caddy-data:
+  caddy-config:

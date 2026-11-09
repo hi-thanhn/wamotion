@@ -1,0 +1,15 @@
+{
+ "1": {
+  "who": "K",
+  "src": "~/AB-solo/reel15-skill/out/wamotion-reel.mp4"
+ },
+ "2": {
+  "who": "C",
+  "src": "~/AB-solo/reel15-tuchu-solo/out/wamotion-showreel.mp4"
+ },
+ "_legend": {
+  "C": "agent tự làm trần (reel15-tuchu-solo)",
+  "K": "agent tự làm + skill wamotion (reel15-skill)"
+ },
+ "_at": "2026-11-05T21:22:43.027782"
+}

@@ -1,0 +1,20 @@
+{
+ "1": {
+  "who": "N",
+  "src": "~/AB-solo/hem12-skill-noears/out/hem12.mp4"
+ },
+ "2": {
+  "who": "C",
+  "src": "~/AB-solo/hem12-bare/out/hem12.mp4"
+ },
+ "3": {
+  "who": "K",
+  "src": "~/AB-solo/hem12-skill/out/hem12.mp4"
+ },
+ "_legend": {
+  "C": "tự làm trần",
+  "K": "tự làm + skill (tai có)",
+  "N": "tự làm + skill, không tai"
+ },
+ "_at": "2026-11-06T09:40:10.827799"
+}

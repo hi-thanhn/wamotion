@@ -1,0 +1,19 @@
+node_modules/
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+
+# ears (Python)
+ears/.venv/
+ears/data/
+ears/**/__pycache__/
+ears/.pytest_cache/
+ears/*.egg-info/
+ears/deploy/.env
+ears/deploy/server.json
+
+# character kit: downloaded by its scripts, never committed
+skills/wamotion/cast/scripts/ual-source/
+skills/wamotion/cast/scripts/rhubarb/bin/
