@@ -1,0 +1,15 @@
+Make a cinematic 3D camera fly-through of the Wamotion landing page: about 14.5 seconds, 1440×1152, 60 fps, rendered to out/flythrough.mp4. Sound matters: a music hit exactly where the title card lands, and a whoosh on each of the two camera turns.
+
+The subject. The page is a static site at /Users/thanhn/AB-solo/landing-mockup/ (index.html, img/, video/). Serve it from that folder with `python3 -m http.server` and capture it with Playwright + Chromium at 1440 px wide, full page. The page is dark with a hero video frame, a ring of eight 3D film frames, three film cards, one blind-test quote and an email form. Its <video> elements may be captured as a still frame or their poster image; lock the layout (no autoplay, no hover, no scroll effects) before capturing so every capture agrees. Capture the whole page as one texture, and separately cut out each element that should float (cards, mockup frames, chips, images, buttons) as a transparent PNG with its position and size written to a JSON file, so the 3D scene can lift them off the page.
+
+The picture. The page lies flat on a studio floor, corners rounded 24 px, a soft contact shadow under it. A bright floor (#f9fbfb at the centre falling to #f2f3f6 at the edges) is the reference look; the page is dark, so decide yourself whether a bright floor or a dark floor reads better, as long as the page and the title card are legible. The floating elements lift 20–40 px toward the camera as it passes over them and settle back. Real depth of field with the focus plane on the page, real soft shadows from the lifted elements, mipmapped textures, 16 sub-frame motion blur. One WebGL2 scene, every animation a function of time so any frame can be sought.
+
+The camera, in one continuous move with no cut, no crossfade:
+- 0.00–8.20 s: fly from the hero down the page to its end, close enough that cards fill much of the frame, the page passing under the lens.
+- 7.75–9.25 s: rise and tilt until the whole page is seen as one long strip.
+- 9.25–9.47 s: hold on the whole page.
+- 9.47–9.97 s: dive back into the hero.
+- 9.97–14.50 s: the hero becomes a floating card and the title card settles over it: the brand badge (a teal dot and the word "wamotion"), the headline "Material for the agent that makes your video." in Geist Medium, and one short italic line in Instrument Serif: "Sound, tempo, ears, a cast. The rest is its own."
+Rules of the move: the camera always travels forward along its path; speed changes only at the very start and the very end, with eased acceleration and deceleration, never a sudden change in between; no horizontal roll, no zoom that reverses, no glow, no text on top of the picture before the title card. The music hit lands at 9.97 s; a whoosh at 8.66 s and one at 9.80 s.
+
+Render H.264 at 60 fps; make a 30 fps preview first and check that the motion is smooth and continuous before the final render. Build it with Remotion in this folder (a WebGL scene inside Remotion is fine; it needs the right renderer flag) and render to out/flythrough.mp4. All on-screen text in English.
