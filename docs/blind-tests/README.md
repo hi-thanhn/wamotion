@@ -27,7 +27,7 @@ What the agent with the skill did, read from its transcript, not from what it sa
 turn; copied six bank sounds with `sound.mjs get` and placed them by `peakLagSec`; measured the track at 132 BPM
 with `tempo.mjs` and cut to that grid; ran `hear.sh` once (23 of 23 metrics in range); spawned one fresh-eyes
 review subagent, which caught a real bug (a quote mark made the name read as "AII"). The rest was its own: a WebGL
-engine, 24-sample motion blur, 620,000 particles, 60 fps. The film is [`examples/showreel-15s.mp4`](../../examples/showreel-15s.mp4).
+engine, 24-sample motion blur, 620,000 particles, 60 fps.
 
 ## 2026-11-06 — a 30-second Facebook ad for a tea shop
 
@@ -46,7 +46,7 @@ The ears were not forced; the agent called them three times on its own: the firs
 visual events with no sound and suggested a step-down before the big hit; after the agent changed the mix the ears
 reported the whole film at −18.4 LUFS, so the agent wrote a mastering step with a limiter and got 23 of 23. Since
 the films were loudness-normalised before scoring, what the scorer could still hear was placement and sound
-quality, and K beat N on both. The film itself is no longer in `examples/`.
+quality, and K beat N on both.
 
 ## What the skill is, for these tests
 

@@ -7,18 +7,6 @@ Remotion project in whatever way it would alone; the skill contains no rule abou
 or be built. In blind tests the same agent with this material beat the same agent without it on every item
 scored, on two briefs (details and limits below).
 
-## Films and prompts
-
-Every film here was made by Claude Opus 5.5 at effort medium in an empty folder with the prompt shown, in one
-unattended run, with the ears available over a local server. The mp4s in [`examples/`](examples/) are muted and
-downscaled to keep the repository small; films whose sound fits under 10 MB also have an `.audio.mp4`. "From the
-skill" lists what the agent actually called, read from its transcript, not from what it said it did. Cost and
-minutes are the agent's own, from the `claude -p` result line.
-
-| | |
-|---|---|
-| ![19-second Wamotion reel](examples/wamotion-reel-19s.gif) | **19-second reel for Wamotion itself** — [mp4](examples/wamotion-reel-19s.mp4) · [with sound](examples/wamotion-reel-19s.audio.mp4) · [prompt](examples/wamotion-reel-19s.prompt.txt)<br>The brief gives one paragraph of facts, the mood, and "sound must be the best part"; the look is the agent's. Every number on screen is measured on this film: the 341 waveforms are the bank, the BPM counter lands on the measured 146.3, the scorecard shot shows the ears' real result. From the skill: 18 bank sounds and the bank track *The Rush*, `tempo.mjs` once, eleven ears calls (`timeline` on the track as JSON for the beat grid, the scorecard after each render), the character kit (the VRM recoloured as clay, the dance clip, the `Post` module, an HDRI and the concrete PBR set for the floor), `credits`, and one fresh-eyes review that found placeholder captions in the review shot and had them replaced with its own findings. The extruded 3D logo is the agent's. Final scorecard 23 of 23. $5.16 · 21 min. |
-
 ## The blind tests
 
 Two tests, same method: the same prompt and model for every arm, films loudness-normalised and shuffled, the
